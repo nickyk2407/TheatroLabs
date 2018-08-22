@@ -3,7 +3,7 @@ package com.example.dev4.omdbapplication.datamodels;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 
-import com.example.dev4.omdbapplication.GlowApplication;
+import com.example.dev4.omdbapplication.MyApplication;
 import com.example.dev4.omdbapplication.constant.Constants;
 import com.example.dev4.omdbapplication.search.PosterDetail;
 
@@ -22,7 +22,7 @@ public class PosterDetailService {
     Retrofit retrofit;
 
     public PosterDetailService() {
-        GlowApplication.getApp().getRemoteClientComponent().inject(this);
+        MyApplication.getApp().getRemoteClientComponent().inject(this);
         posterService = retrofit.create(IPhotoSearchServiceApi.class);
     }
 

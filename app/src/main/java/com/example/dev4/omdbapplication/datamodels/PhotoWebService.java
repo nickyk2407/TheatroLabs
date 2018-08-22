@@ -1,6 +1,6 @@
 package com.example.dev4.omdbapplication.datamodels;
 
-import com.example.dev4.omdbapplication.GlowApplication;
+import com.example.dev4.omdbapplication.MyApplication;
 
 import javax.inject.Inject;
 
@@ -11,7 +11,7 @@ public class PhotoWebService {
     Retrofit retrofit;
 
     public PhotoWebService() {
-        GlowApplication.getApp().getRemoteClientComponent().inject(this);
+        MyApplication.getApp().getRemoteClientComponent().inject(this);
     }
 
     public <S> S createService(Class<S> serviceClass) {

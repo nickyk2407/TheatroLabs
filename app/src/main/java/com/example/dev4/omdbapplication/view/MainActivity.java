@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.dev4.omdbapplication.GlowApplication;
+import com.example.dev4.omdbapplication.MyApplication;
 import com.example.dev4.omdbapplication.R;
 import com.example.dev4.omdbapplication.constant.Constants;
 import com.example.dev4.omdbapplication.di.component.DaggerPhotoSearchComponent;
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public PhotoSearchComponent component() {
         if (component == null) {
             component = DaggerPhotoSearchComponent.builder()
-                    .applicationComponent(((GlowApplication) getApplication()).getApplicationComponent())
+                    .applicationComponent(((MyApplication) getApplication()).getApplicationComponent())
                     .activityModule(new ActivityModule(this))
                     .build();
         }

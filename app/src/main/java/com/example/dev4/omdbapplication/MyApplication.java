@@ -9,8 +9,8 @@ package com.example.dev4.omdbapplication;
         import com.example.dev4.omdbapplication.di.modules.ApplicationModule;
         import com.example.dev4.omdbapplication.di.modules.RemoteClientModule;
 
-public class GlowApplication extends Application {
-    private static GlowApplication app;
+public class MyApplication extends Application {
+    private static MyApplication app;
     private ApplicationComponent applicationComponent;
     private RemoteClientComponent remoteClientComponent;
 
@@ -39,7 +39,7 @@ public class GlowApplication extends Application {
         return applicationComponent;
     }
 
-    public static GlowApplication getApp() {
+    public static MyApplication getApp() {
         return app;
     }
 }
