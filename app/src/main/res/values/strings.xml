@@ -1,0 +1,7 @@
+<resources>
+<string name="app_name">OMDBApplication</string>
+<string name="actors"><b> Actors : </b></string>
+<string name="genre"><b> Genre : </b></string>
+<string name="title"> <b> Title : </b></string>
+<string name="rating"><b> ImdbRating : </b></string>
+</resources>
